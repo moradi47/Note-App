@@ -25,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .name-work{
@@ -44,7 +45,6 @@
 .work-grade{
     display:flex;
     justify-content: flex-start;
-    /* align-items: baseline; */
     align-self: flex-start;
     gap:5px;
 }
