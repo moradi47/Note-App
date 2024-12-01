@@ -19,7 +19,7 @@ let colors ={
 }
 
 function getColor(event){
-    console.log(event.target.id)
+    
     if(Object.keys(colors).includes(event.target.id)){
         backgroundColor = colors[event.target.id];
     }
@@ -47,6 +47,24 @@ addBtnElem.addEventListener('click', function(){
 
     inputElem.style.backgroundColor = '#fff';
     inputElem.value = '';
+})
+
+inputElem.addEventListener('keydown', function(event){
+    if(event.key === 'Enter'){
+        let pElem = document.createElement('p');
+        pElem.innerHTML = inputElem.value;
+
+        let divElem = document.createElement('div');
+        divElem.style.backgroundColor = backgroundColor;
+        divElem.classList.add('card-task');
+        divElem.addEventListener('click', deleteTask);
+        divElem.append(pElem);
+
+        divContainerElem.append(divElem);
+
+        inputElem.style.backgroundColor = '#fff';
+        inputElem.value = '';
+    }
 })
 
 eraseBtnElem.addEventListener('click', function(){
