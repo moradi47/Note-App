@@ -26,3 +26,19 @@ function getColor(event){
 
     inputElem.style.backgroundColor = backgroundColor;
 }
+
+addBtnElem.addEventListener('click', function(){
+
+    let pElem = document.createElement('p');
+    pElem.innerHTML = inputElem.value;
+
+    let divElem = document.createElement('div');
+    divElem.style.backgroundColor = backgroundColor;
+    divElem.classList.add('card-task');
+    divElem.append(pElem);
+
+    divContainerElem.append(divElem);
+
+    inputElem.style.backgroundColor = '#fff';
+    inputElem.value = '';
+})
