@@ -18,3 +18,11 @@ let colors ={
     pink: '#FF87FD',
 }
 
+function getColor(event){
+    console.log(event.target.id)
+    if(Object.keys(colors).includes(event.target.id)){
+        backgroundColor = colors[event.target.id];
+    }
+
+    inputElem.style.backgroundColor = backgroundColor;
+}
