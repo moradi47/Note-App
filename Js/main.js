@@ -46,3 +46,8 @@ addBtnElem.addEventListener('click', function(){
 eraseBtnElem.addEventListener('click', function(){
     inputElem.value = '';
 })
+
+function deleteTask (event){
+    let taskCard = event.target;
+    taskCard.style.display = 'none';
+}
