@@ -56,3 +56,47 @@
     border: 1px solid #000;
     border-radius: 100%;
 }
+
+#white{
+    background-color: #fff;
+}
+
+#orange{
+    background-color: #FFD07F;
+}
+
+#yellow{
+    background-color: #FCFB82;
+}
+
+#pale-green{
+    background-color: #D3F97D;
+}
+
+#green{
+    background-color: #76F87F;
+}
+
+#blue-green{
+    background-color: #7DFAD5;
+}
+
+#pale-blue{
+    background-color: #7EFBFF;
+}
+
+#blue{
+    background-color: #7FD2F9;
+}
+
+#deep-blue{
+    background-color: #7B83FB;
+}
+
+#purple{
+    background-color: #D788FF;
+}
+
+#pink{
+    background-color: #FF87FD;
+}
