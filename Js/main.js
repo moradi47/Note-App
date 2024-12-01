@@ -27,6 +27,11 @@ function getColor(event){
     inputElem.style.backgroundColor = backgroundColor;
 }
 
+function deleteTask (event){
+    let taskCard = event.target;
+    taskCard.style.display = 'none';
+}
+
 addBtnElem.addEventListener('click', function(){
 
     let pElem = document.createElement('p');
@@ -35,6 +40,7 @@ addBtnElem.addEventListener('click', function(){
     let divElem = document.createElement('div');
     divElem.style.backgroundColor = backgroundColor;
     divElem.classList.add('card-task');
+    divElem.addEventListener('click', deleteTask);
     divElem.append(pElem);
 
     divContainerElem.append(divElem);
@@ -47,7 +53,3 @@ eraseBtnElem.addEventListener('click', function(){
     inputElem.value = '';
 })
 
-function deleteTask (event){
-    let taskCard = event.target;
-    taskCard.style.display = 'none';
-}
