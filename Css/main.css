@@ -100,3 +100,41 @@
 #pink{
     background-color: #FF87FD;
 }
+
+.buttons{
+    width: 500px;
+    display: flex ;
+    justify-content:end;
+    align-items: center;
+    align-content:flex-end;
+    gap: 10px;
+}
+
+.add-btn , .erase-btn{
+    width:35px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-btn{
+    border: 2px solid #229EB3;
+    color: #229EB3;
+}
+
+.add-btn:hover{
+    background-color: #229EB3;
+    color:#fff;
+}
+
+.erase-btn{
+    border: 2px solid #DE344D;
+    color:#DE344D;
+}
+
+.erase-btn:hover{
+    background-color: #DE344D;
+    color:#fff;
+}
+
