@@ -26,3 +26,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.name-work{
+    width:500px;
+    height: 30px;
+    padding:5px 10px;
+    border: 2px solid #98BCE3;
+    border-radius: 5px;
+    outline-color: #98BCE3;
+}
+
+.name-work:focus{
+    box-shadow: 1px 1px 8px 0px #98BCE3;
+    outline: none;
+}
