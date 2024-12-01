@@ -42,3 +42,7 @@ addBtnElem.addEventListener('click', function(){
     inputElem.style.backgroundColor = '#fff';
     inputElem.value = '';
 })
+
+eraseBtnElem.addEventListener('click', function(){
+    inputElem.value = '';
+})
