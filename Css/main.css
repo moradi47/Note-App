@@ -40,3 +40,10 @@
     box-shadow: 1px 1px 8px 0px #98BCE3;
     outline: none;
 }
+
+.color{
+    width:20px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
