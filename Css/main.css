@@ -69,7 +69,7 @@
     background-color: #FCFB82;
 }
 
-#pale-green{
+#paleGreen{
     background-color: #D3F97D;
 }
 
@@ -77,11 +77,11 @@
     background-color: #76F87F;
 }
 
-#blue-green{
+#blueGreen{
     background-color: #7DFAD5;
 }
 
-#pale-blue{
+#paleBlue{
     background-color: #7EFBFF;
 }
 
@@ -89,7 +89,7 @@
     background-color: #7FD2F9;
 }
 
-#deep-blue{
+#deepBlue{
     background-color: #7B83FB;
 }
 
@@ -140,16 +140,17 @@
 
 .list-works{
     width: 100%;
-    height: 50vh;
+    height: max-content;
     padding: 0 100px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content:flex-start;
     align-items: flex-start;
     gap: 20px;
 }
 
 .card-task{
-    width:300px;
+    width:372px;
     height: 60px;
     border: 1px solid #000;
     border-radius: 5px;
